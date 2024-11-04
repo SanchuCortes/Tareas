@@ -9,7 +9,7 @@
         android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:minHeight="48dp"
-        android:text="Mostra imagen" />
+        android:text="Mostrar imagen" />
 
     <ImageView
 android:id="@+id/imageView"
