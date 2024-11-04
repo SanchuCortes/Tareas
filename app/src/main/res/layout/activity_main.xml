@@ -1,22 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="302dp"
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:text="Mostra imagen" />
+        android:text="Mostrar Imagen"
+        android:textOff="Mostrar imagen"
+        android:textOn="Ocultar imagen"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp" />
+
 
     <ImageView
-android:id="@+id/imageView"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:src="@drawable/doncic"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="20dp"
-    android:visibility="gone"/>
-    </RelativeLayout>
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/doncic"
+        android:layout_below="@id/toggleButton"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
