@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
@@ -17,7 +18,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ToggleButton toggleButton;
+    private Switch switchButton;
     private ImageView imageView;
 
 
@@ -32,10 +33,10 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        toggleButton = findViewById(R.id.toggleButton);
+       switchButton = findViewById(R.id.switch1);
         imageView = findViewById(R.id.imageView);
 
-        toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        switchButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if(b){

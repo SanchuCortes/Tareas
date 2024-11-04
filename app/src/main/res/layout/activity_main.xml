@@ -4,20 +4,18 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-<ToggleButton
-android:id="@+id/toggleButton"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:textOn="Ocultar Imagen"
-android:textOff="Mostrar Imagen"
-android:layout_centerHorizontal="true"/>
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Mostra imagen" />
 
-<ImageView
+    <ImageView
 android:id="@+id/imageView"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:src="@drawable/doncic"
-    android:layout_below="@id/toggleButton"
     android:layout_centerHorizontal="true"
     android:layout_marginTop="20dp"
     android:visibility="gone"/>
